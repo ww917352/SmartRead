@@ -34,7 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use( express.cookieParser() );
 app.use(express.session({secret:'thisismysupersecret'}));
-app.use(express.session({ secret: 'keyboard cat' }));
+app.use(express.session({ secret: 'keyboard cat'}));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(passport.initialize());
