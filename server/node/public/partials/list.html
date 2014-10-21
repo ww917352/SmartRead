@@ -1,0 +1,27 @@
+<div class="page-header">
+    <h1>RSS List</h1>
+</div>
+<div class="row">
+    <div class="col-xs-5">
+        <a href="#/new" class="btn btn-default"><span class="glyphicon
+glyphicon-plus"></span> New RSS</a>
+    </div>
+    <div class="col-xs-7">
+        <input type="text" class="form-control" ng-model="query"
+               placeholder="Search for a RSS">
+    </div>
+</div>
+<div class="row"><div class="col-xs-12">
+    <hr></div></div>
+<div class="row" ng-switch on="rssList.length">
+    <ul ng-switch-when="0">
+        <li><em>No RSS in database. Would you like to
+            <a href="#/new">create one</a>?</li>
+    </ul>
+    <ul ng-switch-default>
+        <li ng-repeat="rss in rssList | filter:query">
+            <a href="#/rssList/{{rss._id}}">{{rss.name}}</a>
+        </li>
+    </ul>
+</div>
+<p>&nbsp;</p>
