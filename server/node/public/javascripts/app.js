@@ -1,11 +1,11 @@
-angular.module('polls', [])
+angular.module('polls', ['pollServices'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.
-            when('#/polls', { templateUrl: 'partials/list.html', controller:
+            when('/rsslist', { templateUrl: 'partials/list.html', controller:
                 PollListCtrl }).
-            when('#/poll/:pollId', { templateUrl: 'partials/item.html', controller:
+            when('/rssList/:rssId', { templateUrl: 'partials/item.html', controller:
                 PollItemCtrl }).
-            when('#/new', { templateUrl: 'partials/new.html', controller:
+            when('/new', { templateUrl: 'partials/new.html', controller:
                 PollNewCtrl }).
-            otherwise({ redirectTo: '/polls' });
+            otherwise({ redirectTo: '/rsslist' });
     }]);

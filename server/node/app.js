@@ -34,7 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use( express.cookieParser() );
 app.use(express.session({secret:'thisismysupersecret'}));
-app.use(express.session({ secret: 'keyboard cat'}));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(passport.initialize());
@@ -71,14 +70,14 @@ passport.use(new GoogleStrategy({
     });
     }
 ));
-
 app.get('/', routes.indexpage);
-app.get('/intropage', routes.intropage);
-app.get('/formpage', routes.formpage);
-app.get('/transpage', routes.trans);
+app.get('/rssList', routes.rssIndex);
+app.get('/rssList/rssList', routes.list);
+app.get('/rssList/:id', routes.rss);
+app.post('/rssList', routes.create);
+app.del('/rssList/:id', routes.delete);
 app.get('/:page', routes.anypage);
 app.get('/users', user.list);
-app.post('/formpage', routes.handlepost, routes.formpage);
 
 // Redirect the user to Google for authentication.  When complete, Google
 // will redirect the user back to the application at
@@ -89,7 +88,7 @@ app.get('/auth/google', passport.authenticate('google'));
 // the process by verifying the assertion.  If valid, the user will be
 // logged in.  Otherwise, authentication has failed.
 app.get('/auth/google/return',
-    passport.authenticate('google', { successRedirect: '/transpage',
+    passport.authenticate('google', { successRedirect: '/rssList',
         failureRedirect: '/' }));
 
 
