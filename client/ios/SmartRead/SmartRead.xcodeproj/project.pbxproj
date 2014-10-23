@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1860972F19F7A791005161E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860972E19F7A791005161E8 /* main.m */; };
+		1860973219F7A791005161E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860973119F7A791005161E8 /* AppDelegate.m */; };
+		1860973519F7A791005161E8 /* SmartRead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1860973319F7A791005161E8 /* SmartRead.xcdatamodeld */; };
+		1860973819F7A791005161E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860973719F7A791005161E8 /* ViewController.m */; };
+		1860973B19F7A791005161E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1860973919F7A791005161E8 /* Main.storyboard */; };
+		1860973D19F7A791005161E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1860973C19F7A791005161E8 /* Images.xcassets */; };
+		1860974019F7A791005161E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1860973E19F7A791005161E8 /* LaunchScreen.xib */; };
+		1860974C19F7A791005161E8 /* SmartReadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860974B19F7A791005161E8 /* SmartReadTests.m */; };
+		1860975619F901C8005161E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975519F901C8005161E8 /* UIKit.framework */; };
+		1860975919F90233005161E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975819F90233005161E8 /* Foundation.framework */; };
+		1860975B19F90267005161E8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975A19F90267005161E8 /* FacebookSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1860974619F7A791005161E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1860972119F7A791005161E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1860972819F7A791005161E8;
+			remoteInfo = SmartRead;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1860972919F7A791005161E8 /* SmartRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1860972D19F7A791005161E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1860972E19F7A791005161E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1860973019F7A791005161E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1860973119F7A791005161E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1860973419F7A791005161E8 /* SmartRead.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartRead.xcdatamodel; sourceTree = "<group>"; };
+		1860973619F7A791005161E8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1860973719F7A791005161E8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1860973A19F7A791005161E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1860973C19F7A791005161E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1860973F19F7A791005161E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1860974519F7A791005161E8 /* SmartReadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartReadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1860974A19F7A791005161E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1860974B19F7A791005161E8 /* SmartReadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartReadTests.m; sourceTree = "<group>"; };
+		1860975519F901C8005161E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1860975819F90233005161E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1860975A19F90267005161E8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1860972619F7A791005161E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1860975919F90233005161E8 /* Foundation.framework in Frameworks */,
+				1860975619F901C8005161E8 /* UIKit.framework in Frameworks */,
+				1860975B19F90267005161E8 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1860974219F7A791005161E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1860972019F7A791005161E8 = {
+			isa = PBXGroup;
+			children = (
+				1860972B19F7A791005161E8 /* SmartRead */,
+				1860975719F901FA005161E8 /* Frameworks */,
+				1860974819F7A791005161E8 /* SmartReadTests */,
+				1860972A19F7A791005161E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1860972A19F7A791005161E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1860972919F7A791005161E8 /* SmartRead.app */,
+				1860974519F7A791005161E8 /* SmartReadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1860972B19F7A791005161E8 /* SmartRead */ = {
+			isa = PBXGroup;
+			children = (
+				1860973019F7A791005161E8 /* AppDelegate.h */,
+				1860973119F7A791005161E8 /* AppDelegate.m */,
+				1860973619F7A791005161E8 /* ViewController.h */,
+				1860973719F7A791005161E8 /* ViewController.m */,
+				1860973919F7A791005161E8 /* Main.storyboard */,
+				1860973C19F7A791005161E8 /* Images.xcassets */,
+				1860973E19F7A791005161E8 /* LaunchScreen.xib */,
+				1860973319F7A791005161E8 /* SmartRead.xcdatamodeld */,
+				1860972C19F7A791005161E8 /* Supporting Files */,
+			);
+			path = SmartRead;
+			sourceTree = "<group>";
+		};
+		1860972C19F7A791005161E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1860972D19F7A791005161E8 /* Info.plist */,
+				1860972E19F7A791005161E8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1860974819F7A791005161E8 /* SmartReadTests */ = {
+			isa = PBXGroup;
+			children = (
+				1860974B19F7A791005161E8 /* SmartReadTests.m */,
+				1860974919F7A791005161E8 /* Supporting Files */,
+			);
+			path = SmartReadTests;
+			sourceTree = "<group>";
+		};
+		1860974919F7A791005161E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1860974A19F7A791005161E8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1860975719F901FA005161E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1860975A19F90267005161E8 /* FacebookSDK.framework */,
+				1860975819F90233005161E8 /* Foundation.framework */,
+				1860975519F901C8005161E8 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1860972819F7A791005161E8 /* SmartRead */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1860974F19F7A791005161E8 /* Build configuration list for PBXNativeTarget "SmartRead" */;
+			buildPhases = (
+				1860972519F7A791005161E8 /* Sources */,
+				1860972619F7A791005161E8 /* Frameworks */,
+				1860972719F7A791005161E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartRead;
+			productName = SmartRead;
+			productReference = 1860972919F7A791005161E8 /* SmartRead.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1860974419F7A791005161E8 /* SmartReadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1860975219F7A791005161E8 /* Build configuration list for PBXNativeTarget "SmartReadTests" */;
+			buildPhases = (
+				1860974119F7A791005161E8 /* Sources */,
+				1860974219F7A791005161E8 /* Frameworks */,
+				1860974319F7A791005161E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1860974719F7A791005161E8 /* PBXTargetDependency */,
+			);
+			name = SmartReadTests;
+			productName = SmartReadTests;
+			productReference = 1860974519F7A791005161E8 /* SmartReadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1860972119F7A791005161E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Wei, Wei";
+				TargetAttributes = {
+					1860972819F7A791005161E8 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1860974419F7A791005161E8 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1860972819F7A791005161E8;
+					};
+				};
+			};
+			buildConfigurationList = 1860972419F7A791005161E8 /* Build configuration list for PBXProject "SmartRead" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1860972019F7A791005161E8;
+			productRefGroup = 1860972A19F7A791005161E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1860972819F7A791005161E8 /* SmartRead */,
+				1860974419F7A791005161E8 /* SmartReadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1860972719F7A791005161E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1860973B19F7A791005161E8 /* Main.storyboard in Resources */,
+				1860974019F7A791005161E8 /* LaunchScreen.xib in Resources */,
+				1860973D19F7A791005161E8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1860974319F7A791005161E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1860972519F7A791005161E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1860973219F7A791005161E8 /* AppDelegate.m in Sources */,
+				1860973519F7A791005161E8 /* SmartRead.xcdatamodeld in Sources */,
+				1860973819F7A791005161E8 /* ViewController.m in Sources */,
+				1860972F19F7A791005161E8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1860974119F7A791005161E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1860974C19F7A791005161E8 /* SmartReadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1860974719F7A791005161E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1860972819F7A791005161E8 /* SmartRead */;
+			targetProxy = 1860974619F7A791005161E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1860973919F7A791005161E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1860973A19F7A791005161E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1860973E19F7A791005161E8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1860973F19F7A791005161E8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1860974D19F7A791005161E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1860974E19F7A791005161E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1860975019F7A791005161E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/d053278/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = SmartRead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1860975119F7A791005161E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/d053278/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = SmartRead/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1860975319F7A791005161E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartReadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartRead.app/SmartRead";
+			};
+			name = Debug;
+		};
+		1860975419F7A791005161E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartReadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartRead.app/SmartRead";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1860972419F7A791005161E8 /* Build configuration list for PBXProject "SmartRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1860974D19F7A791005161E8 /* Debug */,
+				1860974E19F7A791005161E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1860974F19F7A791005161E8 /* Build configuration list for PBXNativeTarget "SmartRead" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1860975019F7A791005161E8 /* Debug */,
+				1860975119F7A791005161E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1860975219F7A791005161E8 /* Build configuration list for PBXNativeTarget "SmartReadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1860975319F7A791005161E8 /* Debug */,
+				1860975419F7A791005161E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1860973319F7A791005161E8 /* SmartRead.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1860973419F7A791005161E8 /* SmartRead.xcdatamodel */,
+			);
+			currentVersion = 1860973419F7A791005161E8 /* SmartRead.xcdatamodel */;
+			path = SmartRead.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1860972119F7A791005161E8 /* Project object */;
+}
