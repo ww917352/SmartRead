@@ -34,7 +34,6 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use( express.cookieParser() );
 app.use(express.session({secret:'thisismysupersecret'}));
-app.use(express.session({ secret: 'keyboard cat'}));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(passport.initialize());
@@ -76,6 +75,7 @@ app.get('/rssList', routes.rssIndex);
 app.get('/rssList/rssList', routes.list);
 app.get('/rssList/:id', routes.rss);
 app.post('/rssList', routes.create);
+app.del('/rssList/:id', routes.delete);
 app.get('/:page', routes.anypage);
 app.get('/users', user.list);
 

@@ -3,12 +3,27 @@ function PollListCtrl($scope, RssModel) {
     $scope.rssList = RssModel.query();
 }
 // Voting / viewing poll results
-function PollItemCtrl($scope, $routeParams, RssModel) {
-    $scope.rss = RssModel.get({rssId: $routeParams.rssId});;
+function PollItemCtrl($scope, $location, $routeParams, RssModel) {
+    $scope.rss = RssModel.get({rssId: $routeParams.rssId});
+
+    $scope.deleteRSS = function(){
+
+       RssModel.delete({rssId:$routeParams.rssId},function(p,res){
+           if(!p.error) {
+               // If there is no error, redirect to the main view
+               console.log(('deletion successful'));
+               $location.path('rssList');
+           } else {
+               alert('Could not delete rss');
+           }
+       })
+    }
+    ;
 }
 // Creating a new poll
-function PollNewCtrl($scope, $location, RssModel) {
+function PollNewCtrl($scope, $location,  RssModel) {
     $scope.rss = {
+
         name: '',
         url: ''
     };

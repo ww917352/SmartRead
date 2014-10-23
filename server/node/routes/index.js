@@ -9,7 +9,12 @@ exports.rssIndex = function(req,res){
 
 
 exports.indexpage = function(req, res){
-	res.render('index', { title: 'Smart Reading', content: 'this is a smart reading app' });
+    if (req.session.passport.user === undefined ){
+
+        res.render('index', { title: 'Smart Reading', content: 'this is a smart reading app' });
+    } else {
+        res.redirect('/rssList');
+    }
 };
 
 
@@ -20,8 +25,20 @@ exports.anypage = function(req, res){
 
 exports.list = function(req, res) {
     console.log('list request');
-    RssModel.find({}, 'name', function (error, rssSet) {
+    RssModel.find({userId:req.session.passport.user.identifier}, 'name', function (error, rssSet) {
         res.json(rssSet);
+    });
+};
+
+exports.delete = function(req, res) {
+    console.log('list request');
+    var rssId = req.params.id;
+    RssModel.findByIdAndRemove(rssId,{lean: true},function (error, result) {
+        if (error){
+            alert('delete error');
+        } else {
+            res.json({success:true});
+        }
     });
 };
 
@@ -41,7 +58,8 @@ exports.create = function(req, res){
     // Filter out choices with empty text
     //  choices = reqBody.choices.filter(function(v) { return v.text != ''; }),
     // Build up poll object to save
-        rssObj = {name: reqBody.name, url: reqBody.url};
+        userId = req.session.passport.user.identifier,
+        rssObj = {userId: userId, name: reqBody.name, url: reqBody.url};
 
     // Create poll model from built up poll object
     var rss = new RssModel(rssObj);
