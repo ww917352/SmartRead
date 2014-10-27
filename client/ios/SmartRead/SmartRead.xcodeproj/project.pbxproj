@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180167BA19FEDD3800F68FB2 /* AddSubscription.js in Resources */ = {isa = PBXBuildFile; fileRef = 180167B919FEDD3800F68FB2 /* AddSubscription.js */; };
+		180167BB19FEE2EF00F68FB2 /* AddSubscription.js in Resources */ = {isa = PBXBuildFile; fileRef = 180167B919FEDD3800F68FB2 /* AddSubscription.js */; };
 		1860972F19F7A791005161E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860972E19F7A791005161E8 /* main.m */; };
 		1860973219F7A791005161E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1860973119F7A791005161E8 /* AppDelegate.m */; };
 		1860973519F7A791005161E8 /* SmartRead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1860973319F7A791005161E8 /* SmartRead.xcdatamodeld */; };
@@ -18,6 +20,10 @@
 		1860975619F901C8005161E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975519F901C8005161E8 /* UIKit.framework */; };
 		1860975919F90233005161E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975819F90233005161E8 /* Foundation.framework */; };
 		1860975B19F90267005161E8 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1860975A19F90267005161E8 /* FacebookSDK.framework */; };
+		18BAE65119F94599007E8D81 /* SubscriptionsOverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAE65019F94599007E8D81 /* SubscriptionsOverTableViewController.m */; };
+		18BAE65E19FE3ECC007E8D81 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAE65D19FE3ECC007E8D81 /* ActionViewController.m */; };
+		18BAE66019FE3ECC007E8D81 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BAE65F19FE3ECC007E8D81 /* MainInterface.storyboard */; };
+		18BAE66319FE3ECC007E8D81 /* AddSubscriptionAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18BAE65819FE3ECB007E8D81 /* AddSubscriptionAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +34,31 @@
 			remoteGlobalIDString = 1860972819F7A791005161E8;
 			remoteInfo = SmartRead;
 		};
+		18BAE66119FE3ECC007E8D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1860972119F7A791005161E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18BAE65719FE3ECB007E8D81;
+			remoteInfo = AddSubscriptionAction;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		18BAE66719FE3ECC007E8D81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18BAE66319FE3ECC007E8D81 /* AddSubscriptionAction.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		180167B919FEDD3800F68FB2 /* AddSubscription.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AddSubscription.js; sourceTree = "<group>"; };
 		1860972919F7A791005161E8 /* SmartRead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartRead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1860972D19F7A791005161E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1860972E19F7A791005161E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +76,13 @@
 		1860975519F901C8005161E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1860975819F90233005161E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1860975A19F90267005161E8 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		18BAE64F19F94599007E8D81 /* SubscriptionsOverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubscriptionsOverTableViewController.h; sourceTree = "<group>"; };
+		18BAE65019F94599007E8D81 /* SubscriptionsOverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubscriptionsOverTableViewController.m; sourceTree = "<group>"; };
+		18BAE65819FE3ECB007E8D81 /* AddSubscriptionAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AddSubscriptionAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BAE65B19FE3ECC007E8D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18BAE65C19FE3ECC007E8D81 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		18BAE65D19FE3ECC007E8D81 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		18BAE65F19FE3ECC007E8D81 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +97,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1860974219F7A791005161E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BAE65519FE3ECB007E8D81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,6 +128,7 @@
 			children = (
 				1860972919F7A791005161E8 /* SmartRead.app */,
 				1860974519F7A791005161E8 /* SmartReadTests.xctest */,
+				18BAE65819FE3ECB007E8D81 /* AddSubscriptionAction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,10 +136,10 @@
 		1860972B19F7A791005161E8 /* SmartRead */ = {
 			isa = PBXGroup;
 			children = (
+				18BAE65319FE392F007E8D81 /* Extensions */,
+				18BAE65219F945A6007E8D81 /* ViewControllers */,
 				1860973019F7A791005161E8 /* AppDelegate.h */,
 				1860973119F7A791005161E8 /* AppDelegate.m */,
-				1860973619F7A791005161E8 /* ViewController.h */,
-				1860973719F7A791005161E8 /* ViewController.m */,
 				1860973919F7A791005161E8 /* Main.storyboard */,
 				1860973C19F7A791005161E8 /* Images.xcassets */,
 				1860973E19F7A791005161E8 /* LaunchScreen.xib */,
@@ -142,6 +185,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		18BAE65219F945A6007E8D81 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1860973619F7A791005161E8 /* ViewController.h */,
+				1860973719F7A791005161E8 /* ViewController.m */,
+				18BAE64F19F94599007E8D81 /* SubscriptionsOverTableViewController.h */,
+				18BAE65019F94599007E8D81 /* SubscriptionsOverTableViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18BAE65319FE392F007E8D81 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18BAE65919FE3ECC007E8D81 /* AddSubscriptionAction */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		18BAE65919FE3ECC007E8D81 /* AddSubscriptionAction */ = {
+			isa = PBXGroup;
+			children = (
+				18BAE65C19FE3ECC007E8D81 /* ActionViewController.h */,
+				18BAE65D19FE3ECC007E8D81 /* ActionViewController.m */,
+				18BAE65F19FE3ECC007E8D81 /* MainInterface.storyboard */,
+				180167B919FEDD3800F68FB2 /* AddSubscription.js */,
+				18BAE65A19FE3ECC007E8D81 /* Supporting Files */,
+			);
+			name = AddSubscriptionAction;
+			path = ../AddSubscriptionAction;
+			sourceTree = "<group>";
+		};
+		18BAE65A19FE3ECC007E8D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BAE65B19FE3ECC007E8D81 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +235,12 @@
 				1860972519F7A791005161E8 /* Sources */,
 				1860972619F7A791005161E8 /* Frameworks */,
 				1860972719F7A791005161E8 /* Resources */,
+				18BAE66719FE3ECC007E8D81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18BAE66219FE3ECC007E8D81 /* PBXTargetDependency */,
 			);
 			name = SmartRead;
 			productName = SmartRead;
@@ -180,6 +265,23 @@
 			productReference = 1860974519F7A791005161E8 /* SmartReadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		18BAE65719FE3ECB007E8D81 /* AddSubscriptionAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BAE66419FE3ECC007E8D81 /* Build configuration list for PBXNativeTarget "AddSubscriptionAction" */;
+			buildPhases = (
+				18BAE65419FE3ECB007E8D81 /* Sources */,
+				18BAE65519FE3ECB007E8D81 /* Frameworks */,
+				18BAE65619FE3ECB007E8D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddSubscriptionAction;
+			productName = AddSubscriptionAction;
+			productReference = 18BAE65819FE3ECB007E8D81 /* AddSubscriptionAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +297,9 @@
 					1860974419F7A791005161E8 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 1860972819F7A791005161E8;
+					};
+					18BAE65719FE3ECB007E8D81 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -213,6 +318,7 @@
 			targets = (
 				1860972819F7A791005161E8 /* SmartRead */,
 				1860974419F7A791005161E8 /* SmartReadTests */,
+				18BAE65719FE3ECB007E8D81 /* AddSubscriptionAction */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +331,7 @@
 				1860973B19F7A791005161E8 /* Main.storyboard in Resources */,
 				1860974019F7A791005161E8 /* LaunchScreen.xib in Resources */,
 				1860973D19F7A791005161E8 /* Images.xcassets in Resources */,
+				180167BA19FEDD3800F68FB2 /* AddSubscription.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +339,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BAE65619FE3ECB007E8D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180167BB19FEE2EF00F68FB2 /* AddSubscription.js in Resources */,
+				18BAE66019FE3ECC007E8D81 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +362,7 @@
 				1860973519F7A791005161E8 /* SmartRead.xcdatamodeld in Sources */,
 				1860973819F7A791005161E8 /* ViewController.m in Sources */,
 				1860972F19F7A791005161E8 /* main.m in Sources */,
+				18BAE65119F94599007E8D81 /* SubscriptionsOverTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18BAE65419FE3ECB007E8D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BAE65E19FE3ECC007E8D81 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -264,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 1860972819F7A791005161E8 /* SmartRead */;
 			targetProxy = 1860974619F7A791005161E8 /* PBXContainerItemProxy */;
+		};
+		18BAE66219FE3ECC007E8D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18BAE65719FE3ECB007E8D81 /* AddSubscriptionAction */;
+			targetProxy = 18BAE66119FE3ECC007E8D81 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -427,6 +557,30 @@
 			};
 			name = Release;
 		};
+		18BAE66519FE3ECC007E8D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AddSubscriptionAction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		18BAE66619FE3ECC007E8D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AddSubscriptionAction/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,6 +600,7 @@
 				1860975119F7A791005161E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1860975219F7A791005161E8 /* Build configuration list for PBXNativeTarget "SmartReadTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +609,16 @@
 				1860975419F7A791005161E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BAE66419FE3ECC007E8D81 /* Build configuration list for PBXNativeTarget "AddSubscriptionAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BAE66519FE3ECC007E8D81 /* Debug */,
+				18BAE66619FE3ECC007E8D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
